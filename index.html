@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Task Manager</title>
+</head>
+<body>
+    <main class="mainWrapper">  
+        <header class="headerWrapper">
+          <div class="headerContent">
+            <h1 class="title">¿Qué debería hacer hoy?</h1>
+            <div class="inputWrapper">
+              <input type="text" placeholder="Escribí una tarea..." class="taskInput" id="taskInput">
+              <button class="addTaskButton" id="addButton">Agregar</button>
+            </div>
+          </div>
+        </header>
+        <section class="taskListWrapper">
+          <h3 class="listTitle">Tareas pendientes:</h3>
+          <ul class="listItemWrapper" id="listItemWrapper">
+          </ul>
+        </section>
+    </main>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

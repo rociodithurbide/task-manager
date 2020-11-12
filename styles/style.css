@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainWrapper {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainWrapper .headerWrapper {
+  background: #f66b6b;
+  background: -webkit-gradient(linear, left top, right top, from(#f66b6b), to(#5b71bf));
+  background: linear-gradient(90deg, #f66b6b 0%, #5b71bf 100%);
+  color: #fff;
+}
+
+.mainWrapper .headerWrapper .headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8rem;
+  text-align: center;
+}
+
+.mainWrapper .headerWrapper .headerContent .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .taskInput {
+  margin-right: 8px;
+  padding: 8px;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  outline: 0;
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .taskInput::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .taskInput:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .taskInput::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .taskInput::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .addTaskButton {
+  background: transparent;
+  padding: 8px 20px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  outline: 0;
+}
+
+.mainWrapper .headerWrapper .headerContent .inputWrapper .addTaskButton:hover {
+  background: #fff;
+  color: #f66b6b;
+  cursor: pointer;
+}
+
+.mainWrapper .taskListWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #333;
+}
+
+.mainWrapper .taskListWrapper .listTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem {
+  background-color: #f0f0f0;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem .itemLabel {
+  padding: 1rem;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem .itemLabel:hover {
+  background-color: #fafafa;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem .itemLabel .itemCheckbox {
+  margin: 0 0.6rem 0 0;
+  cursor: pointer;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem .itemLabel .itemCheckbox:checked + .itemText {
+  text-decoration: line-through;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem .itemLabel .deleteItem {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  padding: 0.5rem;
+  background-color: #fc9090;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  outline: 0;
+  border: 0;
+}
+
+.mainWrapper .taskListWrapper .listItemWrapper .listItem .itemLabel .deleteItem:hover {
+  background-color: #f66b6b;
+}
+/*# sourceMappingURL=style.css.map */
